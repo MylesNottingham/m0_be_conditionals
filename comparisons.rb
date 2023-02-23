@@ -22,25 +22,32 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
-# this should print: true
+puts "Is number_teachers less than number_students?", number_teachers < number_students
+# this should print: "Is number_teachers less than number_students?" true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
-# this should print: false
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
+# this should print: "Is number_teachers equal to string_teachers?" false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
-# this should print: true
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
+# this should print: "Is number_teachers not equal to number_students?" true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
-# this should print: true
+puts "Is number_students greater than or equal to 20?", number_students >= 20
+# this should print: "Is number_students greater than or equal to 20?" true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
-# this should print: false
+puts "Is number_students greater than or equal to 21?", number_students >= 21
+# this should print: "Is number_students greater than or equal to 21?" false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
-# this should print: true
+puts "Is number_students less than or equal to 20?", number_students <= 20
+# this should print: "Is number_students less than or equal to 20?" true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
-# this should print: true
+puts "Is number_students less than or equal to 21?", number_students <= 21
+# this should print: "Is number_students less than or equal to 21?" true
 
 
 #-------------------
@@ -54,20 +61,33 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+# Evaluates the conditional, is 4 less than 9, which returns "true"
+# Then outputs that value to the command line followed by a new line 
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+# Assigns the variable "books" an integer value of 3.
+# Then evaluates the conditional, is 4 less than books(which is 3), which returns "false"
+# And finally, outputs that value to the command line followed by a new line 
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+# Assigns the variable "friends" an integer value of 6.
+# Then assigns the variable "siblings" an integer value of 2.
+# Then evaluates the conditional, is friends(which is 3) greater than siblings(which is 2), which returns "true"
+# And finally, outputs that value to the command line followed by a new line 
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
+# Assigns the variable "attendees" an integer value of 9.
+# Then assigns the variable "meals" an integer value of 8.
+# Then evaluates the conditional, is attendees(which is 9) not equal to meals(which is 8), which returns "true"
+# And finally, outputs that value to the command line followed by a new line 
 
 
 #-------------------
@@ -90,15 +110,16 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && age < 1
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: It evaluated to "false" because according to the AKC "all puppies are officially considered adult dogs once they reach one year old"
